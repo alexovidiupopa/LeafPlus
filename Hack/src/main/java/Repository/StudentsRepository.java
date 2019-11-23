@@ -29,7 +29,7 @@ public class StudentsRepository implements Repository {
         return studentUserNames.size();
     }
     public List<Student> getAllStudents(){
-        return (List<Student>)studentUserNames.values();
+        return new ArrayList<Student>(studentUserNames.values());
     }
     public List<Student> getStudentsInDomain(String domain){
         return studentUserNames.values().stream()

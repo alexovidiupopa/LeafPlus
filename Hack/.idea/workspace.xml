@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c381d12-4550-4144-9a1f-57a93b94ab23" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sample/FirstServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sample/FirstServlet.java" afterDir="false" />
@@ -11,6 +12,21 @@
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/StudentsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/StudentsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sample/FirstServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sample/FirstServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FirstServlet.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/FirstServlet.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FirstServlet/WEB-INF/classes/Repository/StudentsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FirstServlet/WEB-INF/classes/Repository/StudentsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FirstServlet/WEB-INF/classes/com/sample/FirstServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FirstServlet/WEB-INF/classes/com/sample/FirstServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FirstServlet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/FirstServlet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/StudentsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/StudentsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sample/FirstServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sample/FirstServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+>>>>>>> 0437cb1b3641daba60b0dcfec0827045ef73d2f2
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-11-23" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-11-23" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/Hack/org/apache/jsp/result_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/Hack/org/apache/jsp/result_jsp.java" afterDir="false" />
     </list>
@@ -24,8 +40,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+<<<<<<< HEAD
         <option value="Jsp File" />
         <option value="Class" />
+=======
+        <option value="jsf" />
+        <option value="Jsp File" />
+>>>>>>> 0437cb1b3641daba60b0dcfec0827045ef73d2f2
       </list>
     </option>
   </component>
@@ -53,25 +74,30 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< HEAD
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
+=======
+    <property name="project.structure.last.edited" value="Global Libraries" />
+>>>>>>> 0437cb1b3641daba60b0dcfec0827045ef73d2f2
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PoliHackMaven\Hack\src\main\webapp" />
+      <recent name="D:\Hack\src\main\java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Hack\src\main\webapp" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Hack\src\main\java" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -133,8 +159,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574469065697</updated>
+<<<<<<< HEAD
       <workItem from="1574497655176" duration="3565000" />
       <workItem from="1574507047732" duration="3954000" />
+=======
+      <workItem from="1574497655176" duration="9922000" />
+>>>>>>> 0437cb1b3641daba60b0dcfec0827045ef73d2f2
     </task>
     <servers />
   </component>
