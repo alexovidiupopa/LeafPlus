@@ -30,5 +30,4 @@ public class StudentService implements Dashboard<Project> {
         return populate(projectRepository.getAvailable());
     }
 
-
 }

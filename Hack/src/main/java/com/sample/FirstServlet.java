@@ -44,6 +44,9 @@ public class FirstServlet extends HttpServlet {
             System.out.println("Checking login as a student...");
             if(((ClientsService)services.get(1)).validPwd(username,pwd)){
                 System.out.println("successful student login! Welcome " + username);
+                req.setAttribute("projects", ((StudentService)services.get(0)).getAll());
+                RequestDispatcher view = req.getRequestDispatcher("projectDashboard.jsp");
+                view.forward(req, resp);
             }
             else {
                 System.out.println("Wrong credentials..");
@@ -53,8 +56,7 @@ public class FirstServlet extends HttpServlet {
             System.out.println("Checking login as a client...");
 
         }
-        RequestDispatcher view = req.getRequestDispatcher("result.jsp");
-        view.forward(req, resp);
+
     }
 }
 
