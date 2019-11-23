@@ -1,0 +1,13 @@
+Model\Utils\MyException.class
+com\sample\FirstServlet.class
+Model\Entities\Status.class
+Repository\ProjectRepository.class
+Repository\ClientRepository.class
+Model\Entities\Project.class
+Service\StudentService.class
+Repository\Repository.class
+Model\Entities\Student.class
+Service\ClientsService.class
+Model\Entities\Client.class
+Repository\StudentsRepository.class
+Service\Dashboard.class
