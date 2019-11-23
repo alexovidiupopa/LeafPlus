@@ -1,8 +1,10 @@
 package Repository;
 
+import Model.Entities.Project;
 import Model.Entities.Student;
 import Model.Utils.MyException;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -15,6 +17,13 @@ public class StudentsRepository implements Repository {
     public StudentsRepository() {
         studentUserNames = new HashMap<>();
         userPasswords = new HashMap<>();
+        List<Project> projects = new ArrayList<Project>();
+        List<String>skills = new ArrayList<>();
+        skills.add("Java");
+        skills.add("C++");
+        skills.add("OOP");
+        studentUserNames.put("student",new Student("Andrei","Popescu","UBB CS",4,projects,skills,"andreipopescu@gmail.com"));
+        userPasswords.put("student","student");
     }
     public int getSize(){
         return studentUserNames.size();
@@ -38,6 +47,12 @@ public class StudentsRepository implements Repository {
         else throw new MyException("Sorry, no user name found by that name.");
     }
 
+    public boolean checkPwd(String username, String pwd)  {
+        if(userPasswords.containsKey(username)){
+            return userPasswords.get(username).equals(pwd);
+        }
+        return false;
+    }
     @Override
     public void register(String username, String pwd, Object obj) {
         Student std = (Student) obj;

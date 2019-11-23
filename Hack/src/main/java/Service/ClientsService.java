@@ -35,4 +35,8 @@ public class ClientsService implements Dashboard <Student>{
         lst.add(searchedStudent);
         return populate(lst);
     }
+
+    public boolean validPwd(String username,String pwd) {
+        return studentsRepo.checkPwd(username,pwd);
+    }
 }

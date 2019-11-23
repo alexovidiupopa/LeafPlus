@@ -12,30 +12,47 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet(
         name = "firstservlet22",
-        urlPatterns = "/getAll"
+        urlPatterns = "/login"
 )
 public class FirstServlet extends HttpServlet {
+    private List<Dashboard> services;
     @Override
     public void init() throws ServletException{
 
-        ProjectRepository repo = new ProjectRepository();
-        Dashboard<Project> projectService = new StudentService(repo);
-        for (Project p : projectService.populate(repo.getAll())){
-            System.out.println(p);
-        }
+        services=  new ArrayList<Dashboard>() ;
+        ProjectRepository projRepo = new ProjectRepository();
+        Dashboard<Project> projectService = new StudentService(projRepo);
+        services.add(projectService);
+
+        Repository studRepo = new StudentsRepository();
+        Dashboard<Student> studentDashboard = new ClientsService(studRepo);
+        services.add(studentDashboard);
+
     }
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("user");
         String pwd = req.getParameter("pwd");
 
-        System.out.println(username);
-        System.out.println(pwd);
-        req.setAttribute("out","done");
+        if (req.getParameter("type").equals("Student")) {
+            System.out.println("Checking login as a student...");
+            if(((ClientsService)services.get(1)).validPwd(username,pwd)){
+                System.out.println("successful student login! Welcome " + username);
+            }
+            else {
+                System.out.println("Wrong credentials..");
+            }
+        }
+        else {
+            System.out.println("Checking login as a client...");
 
+        }
         RequestDispatcher view = req.getRequestDispatcher("result.jsp");
         view.forward(req, resp);
     }

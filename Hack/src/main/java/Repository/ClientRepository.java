@@ -14,6 +14,8 @@ public class ClientRepository implements Repository {
     public ClientRepository() {
         usernamePassword = new HashMap<String,String>();
         usernameClient = new HashMap< String,Client>();
+        usernamePassword.put("johnny","johnny");
+        usernameClient.put("johnny",new Client("johny","king"));
     }
 
     @Override
@@ -31,4 +33,5 @@ public class ClientRepository implements Repository {
         client.add(usernameClient.get(username));
         return client;
     }
+
 }

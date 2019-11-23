@@ -7,7 +7,7 @@
     Available Brands
 </h1>
 <%
-System.out.println("<br>We have <br><br>");
+out.println("GG");
 %>
 </body>
 </html>
