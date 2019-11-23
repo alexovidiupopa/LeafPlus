@@ -1,0 +1,163 @@
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    color: chocolate;
+    line-height: 1.6;
+}
+
+#title {
+
+    //background-image: url("assets/back.jpg");
+    background-color: darkgray;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin:0;
+
+}
+
+#mottosum {
+
+      position:relative;
+      padding:0;
+      margin:0;
+
+}
+
+#mottosum h1 {
+
+    z-index: 10;
+    margin-top: -70%;
+    font-family: Courier New, Courier, monospace;
+    font-size: 40px;
+    color: darkgreen;
+    text-decoration:underline;
+    text-decoration-style:dotted;
+}
+
+#title p {
+    font-size: 40px;
+}
+
+#title img {
+
+    z-index:1;
+    position: center;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    height: auto;
+}
+
+#login {
+   
+    position: relative;
+    top: -95%;
+    left: 45%;
+}
+
+#login a {
+    z-index: 100;
+    text-decoration: none;
+    font-family: 'Courier New';
+    font-size: 25px;
+    color: darkgreen;
+}
+
+#section-a {
+    padding: 20px;
+    background: #ff0000;
+    color: #fff;
+    text-align: center;
+    height:100vh;
+}
+
+#section-c {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#section-c div {
+    
+}
+
+#section-c p{
+
+    font-size:30px;
+    font-family: Courier New, Courier, monospace;
+    text-align:left;
+    margin-left:30%;
+    line-height:0.4;
+}
+
+#section-c .box-1 {
+
+    width: 50%;
+    text-align: center;
+    border-right: 9px dashed black;
+    background-color: darkseagreen;
+}
+
+#section-c div{
+
+    width: 100%;
+    height:100%;
+}
+
+#section-c .box-2 {
+
+    width: 50%;
+    text-align: center;
+    background-color:darkseagreen;
+}
+
+#section-c .button-1{
+    
+    height:80%;
+    width:90%;
+    background-color:transparent;
+    margin-top:100px;
+    margin-bottom:80px;
+    font-size:80px;
+    border:none;
+    cursor:pointer;
+    
+}
+
+#section-c .button-1:hover{
+
+    transition-duration: 1s;
+    color:chocolate;
+    background-color:bisque;
+    
+   
+}
+
+#section-c .button-2{
+
+    background-color:transparent;
+    margin-top:100px;
+    margin-bottom:80px;
+    height:80%;
+    width:90%;
+    font-size:80px;
+    border:none;
+    cursor:pointer;
+}
+
+#section-c .button-2:hover {
+
+    transition-duration: 1s;
+    color: cornsilk;
+    background-color: darkkhaki;
+ 
+}

@@ -3,7 +3,6 @@ package com.sample;
 import Model.Entities.Project;
 import Model.Entities.Student;
 import Repository.*;
-import javafx.concurrent.Service;
 import Service.*;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.RequestDispatcher;
@@ -51,10 +50,13 @@ public class FirstServlet extends HttpServlet {
         }
         else {
             System.out.println("Checking login as a client...");
-
+            //TODO check the actual login
+            List<Student> allStuds = ((ClientsService)services.get(1)).getAllStudents();
+            req.setAttribute("students",allStuds);
+            RequestDispatcher view = req.getRequestDispatcher("clientDashboard.jsp");
+            view.forward(req, resp);
         }
-        RequestDispatcher view = req.getRequestDispatcher("result.jsp");
-        view.forward(req, resp);
+
     }
 }
 
