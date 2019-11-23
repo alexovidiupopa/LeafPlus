@@ -25,7 +25,8 @@ public class FirstServlet extends HttpServlet {
 
         services=  new ArrayList<Dashboard>() ;
         ProjectRepository projRepo = new ProjectRepository();
-        Dashboard<Project> projectService = new StudentService(projRepo);
+        Repository clientRepo = new ClientRepository();
+        Dashboard<Project> projectService = new StudentService(projRepo,clientRepo);
         services.add(projectService);
 
         Repository studRepo = new StudentsRepository();
@@ -54,10 +55,17 @@ public class FirstServlet extends HttpServlet {
         else {
             System.out.println("Checking login as a client...");
             //TODO check the actual login
-            List<Student> allStuds = ((ClientsService)services.get(1)).getAllStudents();
-            req.setAttribute("students",allStuds);
-            RequestDispatcher view = req.getRequestDispatcher("clientDashboard.jsp");
-            view.forward(req, resp);
+            if(((StudentService)services.get(0)).validClientUserPwd(username,pwd)){
+                System.out.println("successful client login! Welcome " + username);
+                List<Student> allStuds = ((ClientsService)services.get(1)).getAllStudents();
+                req.setAttribute("students",allStuds);
+                RequestDispatcher view = req.getRequestDispatcher("clientDashboard.jsp");
+                view.forward(req, resp);
+            }
+            else
+            {
+                System.out.println("Wrong credentials..");
+            }
         }
 
     }

@@ -34,4 +34,10 @@ public class ClientRepository implements Repository {
         return client;
     }
 
+    public boolean validPwd(String username,String pwd){
+        if(usernamePassword.containsKey(username)){
+            return usernamePassword.get(username).equals(pwd);
+        }
+        return false;
+    }
 }
