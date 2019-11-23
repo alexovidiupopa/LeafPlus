@@ -1,15 +1,10 @@
 
 body {
     margin: 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 17px;
-    color: chocolate;
-    line-height: 1.6;
+    padding:0;
 }
 
 #title {
-
-    //background-image: url("assets/back.jpg");
     background-color: darkgray;
     background-size: cover;
     background-position: center;
@@ -20,15 +15,23 @@ body {
     align-items: center;
     text-align: center;
     padding: 0;
-    margin:0;
+    margin: 0;
+}
 
+#title h1 {
+
+    font-family: Courier New, Courier, monospace;
+    font-size: 60px;
+    color: darkgreen;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 #mottosum {
 
-      position:relative;
-      padding:0;
-      margin:0;
+    position:relative;
+    padding:0;
+    margin:0;
 
 }
 
@@ -44,7 +47,9 @@ body {
 }
 
 #title p {
-    font-size: 40px;
+    font-size: 20px;
+    color:darkgreen;
+    font-family:Courier New, Courier, monospace;
 }
 
 #title img {
@@ -58,7 +63,7 @@ body {
 }
 
 #login {
-   
+
     position: relative;
     top: -95%;
     left: 45%;
@@ -72,9 +77,50 @@ body {
     color: darkgreen;
 }
 
+#title input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#title input[type=text]:focus {
+    border: 3px solid darkgreen;
+}
+
+#title input[type=submit] {
+    width: 100%;
+    background-color: darkgreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#title label{
+    color:darkgreen;
+    font-family:Courier New, Courier, monospace;
+    font-size:15px;
+}
+
+#title input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#title div-1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
 #section-a {
     padding: 20px;
-    background: #ff0000;
+    background-color:antiquewhite;
     color: #fff;
     text-align: center;
     height:100vh;
@@ -84,10 +130,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: row;
-}
-
-#section-c div {
-    
 }
 
 #section-c p{
@@ -104,7 +146,7 @@ body {
     width: 50%;
     text-align: center;
     border-right: 9px dashed black;
-    background-color: darkseagreen;
+    background-color: darkgray;
 }
 
 #section-c div{
@@ -121,7 +163,7 @@ body {
 }
 
 #section-c .button-1{
-    
+
     height:80%;
     width:90%;
     background-color:transparent;
@@ -130,16 +172,27 @@ body {
     font-size:80px;
     border:none;
     cursor:pointer;
-    
+
 }
 
+#section-c .image{
+    width:100%;
+    height:100%;
+    background-image:url("assets/bg1.jpg");
+}
+
+#section-c .image2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/bg2.jpg");
+}
 #section-c .button-1:hover{
 
-    transition-duration: 1s;
+
+    transition-duration: 0.6s;
     color:chocolate;
     background-color:bisque;
-    
-   
+
 }
 
 #section-c .button-2{
@@ -156,8 +209,8 @@ body {
 
 #section-c .button-2:hover {
 
-    transition-duration: 1s;
+    transition-duration: 1.2s;
     color: cornsilk;
-    background-color: darkkhaki;
- 
+    background-color: cadetblue;
+
 }
