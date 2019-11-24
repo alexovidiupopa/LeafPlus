@@ -45,7 +45,7 @@ public class FirstServlet extends HttpServlet {
             if(((ClientsService)services.get(1)).validPwd(username,pwd)){
                 System.out.println("successful student login! Welcome " + username);
                 req.setAttribute("projects", ((StudentService)services.get(0)).getAll());
-                RequestDispatcher view = req.getRequestDispatcher("projectDashboard.jsp");
+                RequestDispatcher view = req.getRequestDispatcher("TemplateHtml/dashboardProject.jsp");
                 view.forward(req, resp);
             }
             else {
@@ -59,7 +59,7 @@ public class FirstServlet extends HttpServlet {
                 System.out.println("successful client login! Welcome " + username);
                 List<Student> allStuds = ((ClientsService)services.get(1)).getAllStudents();
                 req.setAttribute("students",allStuds);
-                RequestDispatcher view = req.getRequestDispatcher("clientDashboard.jsp");
+                RequestDispatcher view = req.getRequestDispatcher("TemplateHtml/dashboardStudents.jsp");
                 view.forward(req, resp);
             }
             else

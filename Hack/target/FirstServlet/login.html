@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
+    <meta charset="utf-8" />
+    <meta name="description" content="skill-share platform for students" />
+    <meta name="keywords" content="skill-share,idea-share,idea,skill,service,students" />
+    <meta name="author" content="Vlad Simion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeafPlus</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon" />
 </head>
-<body>
-<h1> Test </h1>
-<form method="post" action="login">
-    <input type="radio" name="type" value="Student"> Student<br>
-    <input type="radio" name="type" value="Client"> Client<br>
-    <input type="text" name="user"><br>
-    <input type="text" name="pwd"><br>
-    <input type="submit" name="submit" value="Login"><br>
-</form>
+<body style="background-image:url('assets/formback.png');background-repeat:no-repeat;background-position:center;">
+<header id="title">
+    <h1>Login</h1>
+    <div class="div-1">
+        <form method="post" action="login">
+            <input type="radio" name="type" value="Student"><p><b>Student</b></p><br>
+            <input type="radio" name="type" value="Client"><p><b>Client</b></p><br>
+            <label for="user">User Name</label>
+            <input type="text" name="user"><br>
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd"><br>
+            <input type="submit" name="submit" value="Login" ><br>
+        </form>
+    </div>
+</header>
 </body>
 </html>

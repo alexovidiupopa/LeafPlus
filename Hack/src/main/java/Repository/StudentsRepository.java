@@ -24,6 +24,10 @@ public class StudentsRepository implements Repository {
         skills.add("OOP");
         studentUserNames.put("student",new Student("Andrei","Popescu","UBB CS",4,projects,skills,"andreipopescu@gmail.com"));
         userPasswords.put("student","student");
+        studentUserNames.put("simi69",new Student("Vlad","Simi","UBB CS",5,projects,skills,"simi@nimi.com"));
+        userPasswords.put("simi69","nimi");
+        studentUserNames.put("popi",new Student("Popica","Andrei","PoliNebunii",4,projects,skills,"popi@frumoasameablonda.com"));
+        userPasswords.put("popi","ppktower");
     }
     public int getSize(){
         return studentUserNames.size();

@@ -1,4 +1,6 @@
-<%--
+<%@ page import="java.util.List" %>
+<%@ page import="Model.Entities.Project" %>
+<%@ page import="java.util.Iterator" %><%--
   Created by IntelliJ IDEA.
   User: Razvan
   Date: 23-Nov-19
@@ -12,7 +14,12 @@
 </head>
 <body>
 <%
-    System.out.println("Hello jesus");
+    List<Project> projects = (List) request.getAttribute("projects");
+    Iterator it = projects.iterator();
+    out.println("<br>We have <br><br>");
+    while(it.hasNext()){
+        out.println(it.next()+"<br>");
+    }
 %>
 </body>
 </html>
